@@ -1,0 +1,47 @@
+{% extends "template.html" %}
+
+{% block index %}
+<a href="./"><span class="las la-stream"></span><span>Introducción</span></a>
+{% endblock %}
+
+{%block condicional %}
+<a href="./condicionales"><span class="las la-stream"></span><span>Condicionales</span></a>
+{% endblock %}
+
+{%block mientras %}
+<a href="./mientras"><span class="las la-stream"></span><span>Mientras</span></a>
+{% endblock %}
+
+{% block para %}
+<a href="./para"><span class="las la-stream"></span><span>Para</span></a>
+{% endblock %}
+
+{% block arreglos %}
+<a href="./arreglos"  class="active"><span class="las la-stream"></span><span>Arreglos</span></a>
+{% endblock %}
+
+{% block main %}
+    <div class="main-content">
+        <header>
+            <h1>
+                <label for="nav-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+                Arreglos
+            </h1>
+ 
+        </header>
+
+        <main>
+            <div class="cards">
+                <div class="card-single">
+                    <div>
+                        <h2>
+                            <span>Input y Output</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+{% endblock %}

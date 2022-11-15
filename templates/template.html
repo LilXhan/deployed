@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/highlight/styles/tokyo-night-dark.min.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='/highlight/highlight.min.js') }}"></script>
+    <script>hljs.highlightAll();</script>
+    <title>Cuaderno Algoritmica - UDH</title>
+</head>
+<body>
+    
+    <div class="title">
+        <h1 class="las la-book">Cuaderno Algoritmica - UDH</h1>
+    </div>
+
+    <!--<input type="checkbox" id="nav-toggle"> -->
+
+        
+
+
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h1><span><span>Algoritmica</span></span></h1>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    {% block index %}
+                    {% endblock %}
+                </li>
+                <li>
+                    {% block condicional %}
+                    {% endblock %}
+                </li>
+                <li>
+                    {% block mientras %}
+                    {% endblock %}
+                </li>
+                <li>
+                    {% block para %}
+                    {% endblock %}
+                </li>
+                <li>
+                    {% block arreglos %}
+                    {% endblock %}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    {% block main %}
+    {% endblock %}
+
+</body>
+</html>
